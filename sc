@@ -6,7 +6,7 @@ local Window = VhedhanZ:CreateWindow({
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "Hunty Zombies",
    LoadingSubtitle = "Script By VhedhanZ",
-   Theme = selectedTheme, -- Check https://docs.sirius.menu/VhedhanZ/configuration/themes
+   Theme = selectedTheme, -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
    DisableVhedhanZPrompts = false,
    DisableBuildWarnings = false, -- Prevents VhedhanZ from warning when the script has a version mismatch with the interface

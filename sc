@@ -13,8 +13,8 @@ local Window = VhedhanZ:CreateWindow({
 
    ConfigurationSaving = {
       Enabled = true,
-      FolderName = "SaverHZ", -- Create a custom folder for your hub/game
-      FileName = "K"
+      FolderName = "VhedhanZ", -- Create a custom folder for your hub/game
+      FileName = "D"
    },
 
    Discord = {
@@ -61,7 +61,7 @@ end,
 })
 local ValueSpeed = 16
 local PlayerSpeedSlider = PlayerTab:CreateSlider({
-   Name = "Player Speed",
+   Name = "Kecepatan Mlayu",
    Range = {0, 100},
    Increment = 1,
    Suffix = "Speeds",
@@ -74,7 +74,7 @@ end,  ValueSpeed = CurrentValue,
 })
 
 local PlayerActiveModifyingSpeedToggle = PlayerTab:CreateToggle({
-   Name = "Active Modifying Player Speed",
+   Name = "Aktifkan kecepatan mlayu",
    CurrentValue = false,
    Flag = "ButtonSpeed1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
@@ -90,7 +90,7 @@ end,
 })
 local ValueSpeed2 = 16
 local PlayerSpeedSlider = PlayerTab:CreateSlider({
-   Name = "Dash Speed",
+   Name = "Kecepatan dash",
    Range = {0, 1000},
    Increment = 1,
    Suffix = "Speeds",
@@ -103,7 +103,7 @@ end,  ValueSpeed2 = CurrentValue,
 })
 
 local PlayerActiveModifyingSpeedToggle = PlayerTab:CreateToggle({
-   Name = "Active Modifying Dash Speed",
+   Name = "Aktifkan modifikasi kecepatan dash",
    CurrentValue = false,
    Flag = "ButtonSpeed2", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
@@ -121,7 +121,7 @@ end,
 })
 
 local AFToggle = GameTab:CreateToggle({
-   Name = "AutoFarm",
+   Name = "OtomatisFarming",
    CurrentValue = false,
    Flag = "ButtonAF1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
@@ -146,7 +146,7 @@ end,
 })
 
 local NCAToggle = GameTab:CreateToggle({
-   Name = "No Cooldown Ability",
+   Name = "Tanpa cooldown ability",
    CurrentValue = false,
    Flag = "ButtonNCA1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
@@ -164,7 +164,7 @@ end)
 end,
 })
 local FreezeZombiesToggle = GameTab:CreateToggle({
-   Name = "Freeze Zombies",
+   Name = "Zombie menjadi idiot",
    CurrentValue = false,
    Flag = "ButtonFreezeZombies1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
@@ -208,7 +208,7 @@ end InCollecting = false
 end,
 })
 local NoStunToggle = GameTab:CreateToggle({
-   Name = "No Stun",
+   Name = "Anti Stun",
    CurrentValue = false,
    Flag = "ButtonNS1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
